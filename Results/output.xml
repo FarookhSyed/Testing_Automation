@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200323 16:20:50.507" generator="Robot 3.1.2 (Python 2.7.11 on win32)">
+<suite source="D:\Testing\flairtech-vs\Testing\tests\TC_EM03.robot" id="s1" name="TC EM03">
+<test id="s1-t1" name="TC_LB_TP01">
+<kw type="setup" name="commonsetup" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${prod}</arg>
+<arg>${Chrome}</arg>
+</arguments>
+<msg timestamp="20200323 16:20:50.846" level="INFO">Opening browser 'gc' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" endtime="20200323 16:20:57.566" starttime="20200323 16:20:50.846"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200323 16:20:58.742" starttime="20200323 16:20:57.566"></status>
+</kw>
+<status status="PASS" endtime="20200323 16:20:58.742" starttime="20200323 16:20:50.845"></status>
+</kw>
+<kw name="test the all tabs in employee page" library="keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>&amp;{admin_Logins}[Email]</arg>
+</arguments>
+<msg timestamp="20200323 16:20:58.751" level="INFO">Typing text 'admin@veridic.co.in' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" endtime="20200323 16:20:59.024" starttime="20200323 16:20:58.746"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${pwd}</arg>
+<arg>&amp;{admin_Logins}[Password]</arg>
+</arguments>
+<msg timestamp="20200323 16:20:59.026" level="INFO">Typing password into text field '//*[@id="pass"]'.</msg>
+<status status="PASS" endtime="20200323 16:20:59.225" starttime="20200323 16:20:59.024"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${submit}</arg>
+</arguments>
+<msg timestamp="20200323 16:20:59.226" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div/div/div[2]/div/div/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" endtime="20200323 16:20:59.352" starttime="20200323 16:20:59.225"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200323 16:21:04.355" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200323 16:21:04.355" starttime="20200323 16:20:59.352"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${emp}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:04.355" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[1]/div/nav/div/ul/div[1]/a[7]/li'.</msg>
+<status status="PASS" endtime="20200323 16:21:04.858" starttime="20200323 16:21:04.355"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${active}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:04.858" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div[2]/div[1]/a[2]'.</msg>
+<status status="PASS" endtime="20200323 16:21:05.313" starttime="20200323 16:21:04.858"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200323 16:21:06.316" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200323 16:21:06.316" starttime="20200323 16:21:05.313"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${inactive}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:06.316" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div[2]/div[1]/a[3]'.</msg>
+<status status="PASS" endtime="20200323 16:21:06.453" starttime="20200323 16:21:06.316"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200323 16:21:07.457" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200323 16:21:07.457" starttime="20200323 16:21:06.453"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${suspended}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:07.458" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div[2]/div[1]/a[4]'.</msg>
+<status status="PASS" endtime="20200323 16:21:07.534" starttime="20200323 16:21:07.457"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200323 16:21:08.536" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200323 16:21:08.536" starttime="20200323 16:21:07.535"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${inactive}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:08.536" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div[2]/div[1]/a[3]'.</msg>
+<status status="PASS" endtime="20200323 16:21:08.647" starttime="20200323 16:21:08.536"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${selected}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:08.648" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div[2]/div[1]/a[5]'.</msg>
+<status status="PASS" endtime="20200323 16:21:08.750" starttime="20200323 16:21:08.647"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${inactive}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:08.750" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div[2]/div[1]/a[3]'.</msg>
+<status status="PASS" endtime="20200323 16:21:08.861" starttime="20200323 16:21:08.750"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${active}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:08.862" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div[2]/div[1]/a[2]'.</msg>
+<status status="PASS" endtime="20200323 16:21:09.011" starttime="20200323 16:21:08.861"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${id}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:09.011" level="INFO">Clicking element '//*[@id="dinesh342243@gmail.com"]'.</msg>
+<status status="PASS" endtime="20200323 16:21:09.346" starttime="20200323 16:21:09.011"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${promote}</arg>
+</arguments>
+<msg timestamp="20200323 16:21:09.347" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div[2]/div/div/div[1]/div[3]/div/div[1]/span/button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200323 16:21:10.555" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-219.png"&gt;&lt;img src="selenium-screenshot-219.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200323 16:21:10.559" starttime="20200323 16:21:09.720"></status>
+</kw>
+<msg timestamp="20200323 16:21:10.563" level="FAIL">Element with locator '//*[@id="root"]/div/div[2]/div[2]/div[2]/div/div/div[1]/div[3]/div/div[1]/span/button' not found.</msg>
+<status status="FAIL" endtime="20200323 16:21:10.563" starttime="20200323 16:21:09.347"></status>
+</kw>
+<status status="FAIL" endtime="20200323 16:21:10.563" starttime="20200323 16:20:58.743"></status>
+</kw>
+<kw type="teardown" name="commonteardown" library="common">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200323 16:21:15.567" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200323 16:21:15.567" starttime="20200323 16:21:10.563"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200323 16:21:17.791" starttime="20200323 16:21:15.567"></status>
+</kw>
+<status status="PASS" endtime="20200323 16:21:17.792" starttime="20200323 16:21:10.563"></status>
+</kw>
+<doc>This test case is to test the login page under lower boundary conditions</doc>
+<status status="FAIL" endtime="20200323 16:21:17.792" critical="yes" starttime="20200323 16:20:50.844">Element with locator '//*[@id="root"]/div/div[2]/div[2]/div[2]/div/div/div[1]/div[3]/div/div[1]/span/button' not found.</status>
+</test>
+<doc>test case verifies User Registration process and test all fields present in register user page with boundary values and mixed-match values</doc>
+<status status="FAIL" endtime="20200323 16:21:17.802" starttime="20200323 16:20:50.509"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="TC EM03" pass="0">TC EM03</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200323 16:20:50.825" level="ERROR">Error in file 'D:\Testing\flairtech-vs\Testing\Resources\PO\Userlogin.robot': Resource file '..\Globalvariables\xpath.robot' does not exist.</msg>
+<msg timestamp="20200323 16:20:50.833" level="ERROR">Error in file 'D:\Testing\flairtech-vs\Testing\Tests\TC_TP02.robot': Non-existing setting 'Test Setup'.</msg>
+<msg timestamp="20200323 16:20:50.834" level="ERROR">Error in file 'D:\Testing\flairtech-vs\Testing\Tests\TC_TP02.robot': Non-existing setting 'Test Teardown'.</msg>
+<msg timestamp="20200323 16:20:50.835" level="ERROR">Error in file 'D:\Testing\flairtech-vs\Testing\Resources\keywords.robot': Resource file 'D:\Testing\flairtech-vs\Testing\Tests\TC_TP02.robot' cannot contain tests or tasks.</msg>
+</errors>
+</robot>
